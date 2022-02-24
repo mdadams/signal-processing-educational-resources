@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Signal Processing Education Resources
+# Signal Processing Educational Resources
 
 ## Videos
 
