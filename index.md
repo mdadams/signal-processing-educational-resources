@@ -23,6 +23,10 @@ layout: default
   Signal Processing Channel on YouTube,
   [YouTube](https://www.youtube.com/user/allsignalprocessing).
 
+- Michael D. Adams,
+  Lecture Series for Continuous-Time Signals and Systems.
+  [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
+
 - MIT OpenCourseWare.
   Digital Signal Processing.
   [Link](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
