@@ -29,7 +29,7 @@ layout: default
 
 - Iman Moazzen.
   Signal Processing Hacks with Iman Moazzen - Continuous-Time Domain Tutorials.
-  [YouTube](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
+  [YouTube playlist](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
 
 - MIT OpenCourseWare.
   Digital Signal Processing.
