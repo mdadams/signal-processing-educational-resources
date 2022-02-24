@@ -27,6 +27,10 @@ layout: default
   Lecture Series for Continuous-Time Signals and Systems.
   [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
 
+- Iman Moazzen.
+  Signal Processing Hacks with Iman Moazzen - Continuous-Time Domain Tutorials.
+  [YouTube](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
+
 - MIT OpenCourseWare.
   Digital Signal Processing.
   [Link](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
