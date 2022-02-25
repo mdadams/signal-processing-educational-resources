@@ -113,3 +113,14 @@ layout: default
   [Web Site](https://greenteapress.com/wp/think-dsp).
   [Download (PDF)](http://greenteapress.com/thinkdsp/thinkdsp.pdf).
 
+- Martin Vetterli and Jelena Kovačević.
+  Wavelets and Subband Coding,
+  2007.
+  [Web Site](https://waveletsandsubbandcoding.org).
+  [Download (PDF)](https://waveletsandsubbandcoding.org/Repository/VetterliKovacevic95_Manuscript.pdf).
+
+- Paolo Prandoni and Martin Vetterli.
+  Signal Processing for Communications,
+  2008.
+  [Web Site](https://www.sp4comm.org/index.html).
+  [Download (PDF)](https://www.sp4comm.org/docs/sp4comm_corrected.pdf).
