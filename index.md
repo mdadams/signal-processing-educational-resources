@@ -4,37 +4,6 @@ layout: default
 
 # Signal Processing Educational Resources
 
-## Videos
-
-- Rich Radke,
-  Digital Signal Processing (ECSE-4530) Lectures, Fall 2014.
-  Lectures from Fall 2014's offering of ECSE-4530, Digital Signal Processing.
-  Rensselaer Polytechnic Institute, USA.
-  [YouTube Playlist](https://youtube.com/playlist?list=PLuh62Q4Sv7BUSzx5Jr8Wrxxn-U10qG1et).
-
-- S.C Dutta Roy,
-  Lecture Series:
-  Electronics - Digital Signal Processing,
-  Department of Electrical Engineering,
-  Indian Institute of Technology, Delhi, India.
-  [YouTube Playlist](https://youtube.com/playlist?list=PL9567DFCA3A66F299).
-
-- Barry Van Veen,
-  Signal Processing Channel on YouTube,
-  [YouTube](https://www.youtube.com/user/allsignalprocessing).
-
-- Michael D. Adams,
-  Lecture Series for Continuous-Time Signals and Systems.
-  [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
-
-- Iman Moazzen.
-  Signal Processing Hacks with Iman Moazzen - Continuous-Time Domain Tutorials.
-  [YouTube playlist](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
-
-- MIT OpenCourseWare.
-  Digital Signal Processing.
-  [Link](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
-
 ## Open-Access Textbooks
 
 - Michael D. Adams,
@@ -95,6 +64,11 @@ layout: default
   [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/waveletbook).
   [Download (PDF)](https://www.ece.uvic.ca/~mdadams/waveletbook/downloads/lecture_slides_for_multiresolution_signal_and_geometry_processing-2015-02-03-uvic.pdf).
 
+- Sophocles J. Orfanidis,
+  Introduction to Signal Processing,
+  [Web Site](https://www.ece.rutgers.edu/~orfanidi/intro2sp).
+  [Download (PDF)](https://www.ece.rutgers.edu/~orfanidi/intro2sp/orfanidis-i2sp.pdf).
+
 - Sophocles J. Orfanidis.
   Optimum Signal Processing,
   Second edition,
@@ -102,6 +76,11 @@ layout: default
   Rutgers University, Piscataway, NJ, USA.
   [Textbook Web Site](https://www.ece.rutgers.edu/~orfanidi/osp2e).
   [Download (PDF)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e.pdf).
+
+- Sophocles J. Orfanidis,
+  Applied Optimum Signal Processing,
+  [Web Site](https://www.ece.rutgers.edu/~orfanidi/aosp).
+  [Book (PDF)](https://www.ece.rutgers.edu/~orfanidi/aosp/aosp-1up.pdf).
 
 - Allen B. Downey.
   Think DSP ---
@@ -124,3 +103,54 @@ layout: default
   2008.
   [Web Site](https://www.sp4comm.org/index.html).
   [Download (PDF)](https://www.sp4comm.org/docs/sp4comm_corrected.pdf).
+
+- Steven W. Smith,
+  The Scientist and Engineer's Guide to Digital Signal Processing,
+  1999.
+  [Web Site](http://www.dspguide.com).
+  [Web Site](https://www.analog.com/en/education/education-library/scientist_engineers_guide.html).
+
+- Robert M. Gray,
+  Introduction to Statistical Signal Processing,
+  [Web Site](https://ee.stanford.edu/~gray/sp.html).
+  [Book (PDF)](https://ee.stanford.edu/~gray/sp.pdf).
+
+
+## Videos
+
+- Rich Radke,
+  Digital Signal Processing (ECSE-4530) Lectures, Fall 2014.
+  Lectures from Fall 2014's offering of ECSE-4530, Digital Signal Processing.
+  Rensselaer Polytechnic Institute, USA.
+  [YouTube Playlist](https://youtube.com/playlist?list=PLuh62Q4Sv7BUSzx5Jr8Wrxxn-U10qG1et).
+
+- S.C Dutta Roy,
+  Lecture Series:
+  Electronics - Digital Signal Processing,
+  Department of Electrical Engineering,
+  Indian Institute of Technology, Delhi, India.
+  [YouTube Playlist](https://youtube.com/playlist?list=PL9567DFCA3A66F299).
+
+- Barry Van Veen,
+  Signal Processing Channel on YouTube,
+  [YouTube](https://www.youtube.com/user/allsignalprocessing).
+
+- Alan V. Oppenheim,
+  MIT RES.6-008 Digital Signal Processing,
+  1975
+  [YouTube Playlist](https://www.youtube.com/playlist?list=PL8157CA8884571BA2).
+
+- Michael D. Adams,
+  Lecture Series for Continuous-Time Signals and Systems.
+  [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
+
+- Iman Moazzen.
+  Signal Processing Hacks with Iman Moazzen - Continuous-Time Domain Tutorials.
+  [YouTube playlist](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
+
+## Online Courses
+
+- MIT OpenCourseWare.
+  Digital Signal Processing,
+  2011.
+  [Link](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
