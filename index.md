@@ -115,6 +115,31 @@ layout: default
   [Web Site](https://ee.stanford.edu/~gray/sp.html).
   [Book (PDF)](https://ee.stanford.edu/~gray/sp.pdf).
 
+- Sadasivan Puthusserypady,
+  Applied Signal Processing,
+  2021,
+  Boston-Delft: now publishers,
+  <http://dx.doi.org/10.1561/9781680839791>
+  [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680839784).
+
+- Masaaki Nagahara,
+  Sparsity Methods for Systems and Control,
+  Boston-Delft: now publishers,
+  2020,
+  <http://dx.doi.org/10.1561/9781680837254>
+  [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680837247).
+
+- Michael Stiber, Bilin Zhang Stiber, and Eric C. Larson.
+  Signal Computing: Digital Signals in the Software Domain,
+  2020.
+  [Web Site](http://faculty.washington.edu/stiber/pubs/Signal-Computing).
+  [Book (PDF)](http://faculty.washington.edu/stiber/pubs/Signal-Computing/Signal%20Computing.pdf).
+  [GitHub](https://github.com/stiber/Signal-Computing).
+
+- Andrew K. Bolstad and Julie A. Dickerson.
+  Open Signals and Systems Laboratory Exercises.
+  [Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
+  [Download](https://www.iastatedigitalpress.com/plugins/books/68/format/96/).
 
 ## Videos
 
