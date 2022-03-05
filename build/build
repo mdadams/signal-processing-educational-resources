@@ -87,6 +87,15 @@ fi
 
 version="$(github_ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
+ref_type="$(github_ref_type "$github_ref")" || \
+  panic "cannot determine ref type"
+
+if [ "$ref_type" = "branch" ]; then
+	timestamp="$(date +%Y-%m-%d-%H%M%S)" || panic "cannot get date"
+	version_string="$timestamp"
+else
+	version_string="$version"
+fi
 
 if [ ! -d "$install_dir" ]; then
 	mkdir -p "$install_dir" || \
@@ -97,7 +106,8 @@ fi
   panic "cannot make clean"
 
 (cd "$source_dir" && \
-  make DOC_VERSION="$version" DOC_SPELLCHECK_MUST_PASS="$spellcheck" all) || \
+  make DOC_VERSION="$version_string" DOC_SPELLCHECK_MUST_PASS="$spellcheck" \
+  all) || \
   panic "cannot build document"
 
 make INSTALL_DIR="$install_dir" install || \
