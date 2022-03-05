@@ -126,6 +126,7 @@ output: pdf_document
   Boston-Delft: now publishers,
   <http://dx.doi.org/10.1561/9781680839791>
   [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680839784).
+  [Download (PDF)](https://nowpublishers.com/article/DownloadEBook/9781680839784?format=pdf).
 
 - Masaaki Nagahara,
   Sparsity Methods for Systems and Control,
@@ -133,6 +134,7 @@ output: pdf_document
   2020,
   <http://dx.doi.org/10.1561/9781680837254>
   [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680837247).
+  [Download (PDF)](https://nowpublishers.com/article/DownloadEBook/9781680837247?format=pdf).
 
 - Michael Stiber, Bilin Zhang Stiber, and Eric C. Larson,
   Signal Computing: Digital Signals in the Software Domain,
