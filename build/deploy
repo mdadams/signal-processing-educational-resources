@@ -4,6 +4,9 @@
 # Some helper functions.
 ################################################################################
 
+program_dir=$(dirname "$0") || panic "cannot determine directory name"
+source "$program_dir/utilities" || exit 1
+
 # Terminate with error.
 panic()
 {
@@ -150,12 +153,22 @@ if [ "$verbose" -ge 3 ]; then
 	set -xv
 fi
 
-cmd_dir=$(dirname "$0") || \
+program_dir=$(dirname "$0") || \
   panic "cannot determine directory"
-top_dir="$cmd_dir/.."
+top_dir="$program_dir/.."
 
-version="$(awk -v FS="/" '{print $3;}' <<< "$github_ref")" || \
+version="$(github_ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
+ref_type="$(github_ref_type)" || \
+  panic "cannot determine ref type"
+case "$ref_type" in
+branch)
+	is_branch=1;;
+tag)
+	is_branch=0;;
+*)
+	panic "invalid reference type";;
+esac
 if [ "$verbose" -ge 1 ]; then
 	echo "version $version"
 fi
@@ -273,6 +286,12 @@ git -C "$git_dir" config --local user.email "mdadams@ece.uvic.ca" || \
   panic "cannot set Git user email"
 
 # Add the content for the new release.
+if [ "$is_branch" -ne 0 ]; then
+	if [ -e "$version_dir" ]; then
+		rm -rf "$version_dir" || \
+		  panic "cannot remove directory $version_dir"
+	fi
+fi
 if [ -e "$version_dir" ]; then
 	panic "directory already exist for $version"
 fi
@@ -281,13 +300,15 @@ mkdir -p "$version_dir" || \
 (cd "$in_dir" && tar -cf - .) | (cd "$version_dir" && tar -xf -) || \
   panic "tar failed"
 
-# Update the symlink for the latest release.
-target="$git_dir/latest"
-if [ -h "$target" -o -e "$target" ]; then
-	rm -f "$target" || panic "rm failed"
+# Update the symlink for the latest release if this is a release.
+if [ "$is_branch" -eq 0 ]; then
+	target="$git_dir/latest"
+	if [ -h "$target" -o -e "$target" ]; then
+		rm -f "$target" || panic "rm failed"
+	fi
+	ln -s "$version/html" "$target" || \
+	  panic "ln failed"
 fi
-ln -s "$version/html" "$target" || \
-  panic "ln failed"
 
 # Add a top-level index.html file to redirect to the latest release.
 target="$git_dir/index.html"

@@ -1,0 +1,39 @@
+github_ref_to_version()
+{
+	local ref="$1"
+	local type="$(awk -v FS="/" '{print $2;}' <<< "$ref")" || return 1
+	local name="$(awk -v FS="/" '{print $3;}' <<< "$ref")" || return 1
+	local version
+	case "$type" in
+	heads)
+		branch="$name"
+		version="$branch"
+		;;
+	tags)
+		tag="$name"
+		local pattern='v[0-9]+\.[0-9]+\.[0-9]+'
+		if [[ "$tag" =~ $pattern ]]; then
+			version="$(awk '{print substr($1, 2);}' <<< "$tag")" || return 1
+		else
+			version="$tag"
+		fi
+		;;
+	*)
+		return 1;;
+	esac
+	echo "$version"
+}
+
+github_ref_type()
+{
+	local ref="$1"
+	local buffer="$(awk -v FS="/" '{print $2;}' <<< "$ref")" || return 1
+	if [ "$buffer" = heads ]; then
+		result="branch"
+	elif [ "$buffer" = tags ]; then
+		result="tag"
+	else
+		result="unknown"
+	fi
+	echo "$result" || return 1
+}

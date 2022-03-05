@@ -4,25 +4,14 @@
 # Some helper functions.
 ################################################################################
 
+program_dir=$(dirname "$0") || panic "cannot determine directory name"
+source "$program_dir/utilities" || exit 1
+
 # Terminate with error.
 panic()
 {
 	echo "ERROR: $@" 1>&2
 	exit 1
-}
-
-ref_to_version()
-{
-	local ref="$1"
-	local tag="$(awk -v FS="/" '{print $3;}' <<< "$ref")" || return 1
-	local pattern='v[0-9]+\.[0-9]+\.[0-9]+'
-	local version
-	if [[ "$tag" =~ $pattern ]]; then
-		version="$(awk '{print substr($1, 2);}' <<< "$tag")" || return 1
-	else
-		version="$tag"
-	fi
-	echo "$version"
 }
 
 # Print usage information.
@@ -59,8 +48,7 @@ usage()
 # Perform some basic initialization.
 ################################################################################
 
-cmd_dir=$(dirname "$0") || panic "cannot determine directory name"
-top_dir="$cmd_dir/.."
+top_dir="$program_dir/.."
 source_dir="$top_dir/src"
 
 ################################################################################
@@ -97,7 +85,7 @@ fi
 # Build the document.
 ################################################################################
 
-version="$(ref_to_version "$github_ref")" || \
+version="$(github_ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
 
 if [ ! -d "$install_dir" ]; then
