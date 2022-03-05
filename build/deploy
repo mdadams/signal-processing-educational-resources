@@ -159,7 +159,7 @@ top_dir="$program_dir/.."
 
 version="$(github_ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
-ref_type="$(github_ref_type)" || \
+ref_type="$(github_ref_type "$github_ref")" || \
   panic "cannot determine ref type"
 case "$ref_type" in
 branch)
