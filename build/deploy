@@ -301,11 +301,19 @@ mkdir -p "$version_dir" || \
 (cd "$in_dir" && tar -cf - .) | (cd "$version_dir" && tar -xf -) || \
   panic "tar failed"
 
+# Create a symlink for the main branch.
+target="$git_dir/main"
+if [ -h "$target" -o -e "$target" ]; then
+	rm -f "$target" || panic "cannot remove $target"
+fi
+ln -s "main/html" "$target" || \
+  panic "ln failed"
+
 # Create a symlink for the latest release.
 if [ "$main_is_latest" -ne 0 ]; then
 	target="$git_dir/latest"
 	if [ -h "$target" -o -e "$target" ]; then
-		rm -f "$target" || panic "rm failed"
+		rm -f "$target" || panic "cannot remove $target"
 	fi
 	ln -s "main/html" "$target" || \
 	  panic "ln failed"
@@ -313,7 +321,7 @@ else
 	if [ "$is_branch" -eq 0 ]; then
 		target="$git_dir/latest"
 		if [ -h "$target" -o -e "$target" ]; then
-			rm -f "$target" || panic "rm failed"
+			rm -f "$target" || panic "cannot remove $target"
 		fi
 		ln -s "$version/html" "$target" || \
 		  panic "ln failed"
