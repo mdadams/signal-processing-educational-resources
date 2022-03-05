@@ -45,6 +45,6 @@ jobs:
           -t ${{runner.temp}}/deploy_tmp \
           -i ${{runner.temp}}/output \
           -r mdadams/signal-processing-educational-resources \
-          -b new-gh-pages \
+          -b gh-pages \
           -z ${{github.ref}}
     ############################################################
