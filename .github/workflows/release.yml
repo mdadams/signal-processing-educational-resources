@@ -1,0 +1,50 @@
+# This is an action that builds the document and deploys the build document
+# to its associated GitHub pages site.
+
+name: release
+
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+
+      - v[0-9]+.[0-9]+.[0-9]+-rc[0-9]+
+      - v[0-9]+.[0-9]+.[0-9]+-alpha[0-9]+
+      - v[0-9]+.[0-9]+.[0-9]+-beta[0-9]+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    ############################################################
+    - name: Prepare to build the document.
+      shell: bash
+      run: build/prebuild
+    ############################################################
+    # The following builds the document in multiple formats for deployment.
+    - name: Build the document.
+      shell: bash
+      run: |
+        build/build \
+          -d ${{runner.temp}}/output \
+          -z ${{github.ref}}
+    ############################################################
+    # The following deploys to a different branch of the same repository
+    # using an access token for authentication.
+    # Note: It is recommended that this approach not be used.
+    - name: Deploy the built document to a GitHub Pages branch.
+      env:
+        DEPLOY_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      shell: bash
+      run: |
+        build/deploy \
+          -f \
+          -m token \
+          -t ${{runner.temp}}/deploy_tmp \
+          -i ${{runner.temp}}/output \
+          -r mdadams/signal-processing-educational-resources \
+          -b new-gh-pages \
+          -z ${{github.ref}}
+    ############################################################
