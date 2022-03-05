@@ -258,6 +258,8 @@ fi
 if [ "$status" -eq 2 ]; then
 	git -C "$git_dir" checkout --orphan "$branch" || \
 	  panic "cannot create orphan branch $branch"
+	git -C "$git_dir" rm -rf . || \
+	  panic "cannot remove files"
 	git_push_extra_args=(-u origin "$branch")
 else
 	git -C "$git_dir" checkout "$branch" || \
