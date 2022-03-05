@@ -79,6 +79,7 @@ force=0
 prepare_only=0
 verbose=1
 deploy_mode=
+main_is_latest=1
 
 while getopts b:i:r:t:z:fnvqm: opt; do
 	case $opt in
@@ -300,14 +301,23 @@ mkdir -p "$version_dir" || \
 (cd "$in_dir" && tar -cf - .) | (cd "$version_dir" && tar -xf -) || \
   panic "tar failed"
 
-# Update the symlink for the latest release if this is a release.
-if [ "$is_branch" -eq 0 ]; then
+# Create a symlink for the latest release.
+if [ "$main_is_latest" -ne 0 ]; then
 	target="$git_dir/latest"
 	if [ -h "$target" -o -e "$target" ]; then
 		rm -f "$target" || panic "rm failed"
 	fi
-	ln -s "$version/html" "$target" || \
+	ln -s "main/html" "$target" || \
 	  panic "ln failed"
+else
+	if [ "$is_branch" -eq 0 ]; then
+		target="$git_dir/latest"
+		if [ -h "$target" -o -e "$target" ]; then
+			rm -f "$target" || panic "rm failed"
+		fi
+		ln -s "$version/html" "$target" || \
+		  panic "ln failed"
+	fi
 fi
 
 # Add a top-level index.html file to redirect to the latest release.
