@@ -1,0 +1,21 @@
+#! /usr/bin/env bash
+
+cmd_dir="$(dirname "$0")" || exit 1
+
+# Get an absolute pathname.
+#cmd_dir=$(realpath "$cmd_dir") || exit 1
+
+top_dir="$cmd_dir/.."
+
+# The name of the personal wordlist to use.
+wordlist="wordlist"
+
+# The directory where the wordlists are located.
+spellcheck_dir="$top_dir/etc"
+
+wordlist_file="$spellcheck_dir/$wordlist"
+if [ ! -f "$wordlist_file" ]; then
+	echo "ERROR: missing wordlist file ($wordlist_file)"
+	exit 1
+fi
+exec aspell --home-dir="$spellcheck_dir" --personal "$wordlist" "$@"
