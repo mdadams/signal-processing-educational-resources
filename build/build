@@ -11,6 +11,20 @@ panic()
 	exit 1
 }
 
+ref_to_version()
+{
+	local ref="$1"
+	local tag="$(awk -v FS="/" '{print $3;}' <<< "$ref")" || return 1
+	local pattern='v[0-9]+\.[0-9]+\.[0-9]+'
+	local version
+	if [[ "$tag" =~ $pattern ]]; then
+		version="$(awk '{print substr($1, 2);}' <<< "$tag")" || return 1
+	else
+		version="$tag"
+	fi
+	echo "$version"
+}
+
 # Print usage information.
 usage()
 {
@@ -83,7 +97,7 @@ fi
 # Build the document.
 ################################################################################
 
-version="$(awk -v FS="/" '{print $3;}' <<< "$github_ref")" || \
+version="$(ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
 
 if [ ! -d "$install_dir" ]; then
