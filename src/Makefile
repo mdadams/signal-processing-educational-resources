@@ -29,7 +29,10 @@ all: documents spellcheck
 
 # The documents target builds the document in a minimal set of formats.
 .PHONY: documents
-documents: main.html main_html main.epub main.pdf
+documents: main.html main_html main.epub
+
+.PHONY: extra_documents
+extra_documents: main.pdf
 
 # The spellcheck format performs a spell check on the document.
 .PHONY: spellcheck
