@@ -158,15 +158,24 @@ program_dir=$(dirname "$0") || \
   panic "cannot determine directory"
 top_dir="$program_dir/.."
 
+tmp_dir="$tmp_dir/deploy"
+git_dir="$tmp_dir/git"
+github_host="github.com"
+github_user="git"
+
 version="$(github_ref_to_version "$github_ref")" || \
   panic "cannot determine document version"
 ref_type="$(github_ref_type "$github_ref")" || \
   panic "cannot determine ref type"
 case "$ref_type" in
 branch)
-	is_branch=1;;
+	version_dir="$git_dir/branch-$version"
+	is_branch=1
+	;;
 tag)
-	is_branch=0;;
+	version_dir="$git_dir/$version"
+	is_branch=0
+	;;
 *)
 	panic "invalid reference type";;
 esac
@@ -174,12 +183,6 @@ if [ "$verbose" -ge 1 ]; then
 	echo "version $version"
 fi
 
-tmp_dir="$tmp_dir/deploy"
-
-git_dir="$tmp_dir/git"
-version_dir="$git_dir/$version"
-github_host="github.com"
-github_user="git"
 
 ################################################################################
 # Setup SSH client configuration if needed.
@@ -302,21 +305,25 @@ mkdir -p "$version_dir" || \
   panic "tar failed"
 
 # Create a symlink for the main branch.
-target="$git_dir/main"
-if [ -h "$target" -o -e "$target" ]; then
-	rm -f "$target" || panic "cannot remove $target"
-fi
-ln -s "main/html" "$target" || \
-  panic "ln failed"
-
-# Create a symlink for the latest release.
-if [ "$main_is_latest" -ne 0 ]; then
-	target="$git_dir/latest"
+if [ -d "$git_dir/branch-main" ]; then
+	target="$git_dir/main"
 	if [ -h "$target" -o -e "$target" ]; then
 		rm -f "$target" || panic "cannot remove $target"
 	fi
-	ln -s "main/html" "$target" || \
+	ln -s "branch-main/html" "$target" || \
 	  panic "ln failed"
+fi
+
+# Create a symlink for the latest release.
+if [ "$main_is_latest" -ne 0 ]; then
+	if [ -e "$git_dir/main" ]; then
+		target="$git_dir/latest"
+		if [ -h "$target" -o -e "$target" ]; then
+			rm -f "$target" || panic "cannot remove $target"
+		fi
+		ln -s "main" "$target" || \
+		  panic "ln failed"
+	fi
 else
 	if [ "$is_branch" -eq 0 ]; then
 		target="$git_dir/latest"
