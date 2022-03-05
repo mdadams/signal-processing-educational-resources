@@ -13,7 +13,7 @@ output: pdf_document
   University of Victoria,
   Victoria, Canada,
   Jan. 2022,
-  xliv + 690 pages,
+  xliv + 690 pages.
   ISBN 978-0-9879197-7-9 (PDF).
   [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
   [Download (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/signals_and_systems-4.0.pdf).
@@ -29,15 +29,17 @@ output: pdf_document
   [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
   [Download (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/lecture_slides_for_signals_and_systems-4.0.pdf).
 
-- Martin Vetterli, Jelena Kovačević, and Vivek K. Goyal.
+- Martin Vetterli, Jelena Kovačević, and Vivek K. Goyal,
   Foundations of Signal Processing,
-  May 2014.
+  May 2014,
+  715 pages.
   [Textbook Web Site](https://www.fourierandwavelets.org).
   [Download (PDF)](https://www.fourierandwavelets.org/FSP_v1.1_2014.pdf).
 
-- Jelena Kovačević, Vivek K Goyal, and Martin Vetterli.
+- Jelena Kovačević, Vivek K Goyal, and Martin Vetterli,
   Fourier and Wavelet Signal Processing,
-  Jan. 2013.
+  Jan. 2013,
+  272 pages.
   [Textbook Web Site](https://www.fourierandwavelets.org).
   [Download (PDF)](https://www.fourierandwavelets.org/FWSP_a3.2_2013.pdf).
 
@@ -67,10 +69,12 @@ output: pdf_document
 
 - Sophocles J. Orfanidis,
   Introduction to Signal Processing,
+  2010,
+  783 pages.
   [Web Site](https://www.ece.rutgers.edu/~orfanidi/intro2sp).
   [Download (PDF)](https://www.ece.rutgers.edu/~orfanidi/intro2sp/orfanidis-i2sp.pdf).
 
-- Sophocles J. Orfanidis.
+- Sophocles J. Orfanidis,
   Optimum Signal Processing,
   Second edition,
   Department of Electrical and Computer Engineering,
@@ -83,7 +87,7 @@ output: pdf_document
   [Web Site](https://www.ece.rutgers.edu/~orfanidi/aosp).
   [Book (PDF)](https://www.ece.rutgers.edu/~orfanidi/aosp/aosp-1up.pdf).
 
-- Allen B. Downey.
+- Allen B. Downey,
   Think DSP ---
   Digital Signal Processing in Python,
   Version 1.1.4.
@@ -93,13 +97,13 @@ output: pdf_document
   [Web Site](https://greenteapress.com/wp/think-dsp).
   [Download (PDF)](http://greenteapress.com/thinkdsp/thinkdsp.pdf).
 
-- Martin Vetterli and Jelena Kovačević.
+- Martin Vetterli and Jelena Kovačević,
   Wavelets and Subband Coding,
   2007.
   [Web Site](https://waveletsandsubbandcoding.org).
   [Download (PDF)](https://waveletsandsubbandcoding.org/Repository/VetterliKovacevic95_Manuscript.pdf).
 
-- Paolo Prandoni and Martin Vetterli.
+- Paolo Prandoni and Martin Vetterli,
   Signal Processing for Communications,
   2008.
   [Web Site](https://www.sp4comm.org/index.html).
@@ -130,14 +134,14 @@ output: pdf_document
   <http://dx.doi.org/10.1561/9781680837254>
   [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680837247).
 
-- Michael Stiber, Bilin Zhang Stiber, and Eric C. Larson.
+- Michael Stiber, Bilin Zhang Stiber, and Eric C. Larson,
   Signal Computing: Digital Signals in the Software Domain,
   2020.
   [Web Site](http://faculty.washington.edu/stiber/pubs/Signal-Computing).
   [Book (PDF)](http://faculty.washington.edu/stiber/pubs/Signal-Computing/Signal%20Computing.pdf).
   [GitHub](https://github.com/stiber/Signal-Computing).
 
-- Andrew K. Bolstad and Julie A. Dickerson.
+- Andrew K. Bolstad and Julie A. Dickerson,
   Open Signals and Systems Laboratory Exercises.
   [Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
   [Download](https://www.iastatedigitalpress.com/plugins/books/68/format/96/).
