@@ -152,7 +152,7 @@ fi
 
 cmd_dir=$(dirname "$0") || \
   panic "cannot determine directory"
-top_dir="$cmd_dir/../.."
+top_dir="$cmd_dir/.."
 
 version="$(awk -v FS="/" '{print $3;}' <<< "$github_ref")" || \
   panic "cannot determine document version"
