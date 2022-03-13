@@ -54,12 +54,13 @@ install: all
 	if [ ! -d "$(INSTALL_DIR)" ]; then \
 	    mkdir -p "$(INSTALL_DIR)" || exit 1; \
 	  fi
-	for dir in html html/images; do \
+	for dir in html html/images html/css; do \
 	    if [ ! -d "$(INSTALL_DIR)/$$dir" ]; then \
 	        mkdir -p "$(INSTALL_DIR)/$$dir" || exit 1; \
 	    fi; \
 	  done
 	#cp -f images/cpp_logo.png "$(INSTALL_DIR)/html/images"
+	cp -f css/*.css "$(INSTALL_DIR)/html/css"
 	cp -f main.html "$(INSTALL_DIR)/html/index.html"
 	cp -r -f main_html "$(INSTALL_DIR)/html_split"
 	cp -f main.epub "$(INSTALL_DIR)"
@@ -84,12 +85,17 @@ PANDOC_OPTIONS += --pdf-engine=xelatex
 #PANDOC_OPTIONS += --lua-filter=pandoc/filters/meta_vars.lua
 #PANDOC_OPTIONS += --metadata date="`date +%Y-%m-%d`"
 PANDOC_OPTIONS += --metadata version=$(DOC_VERSION)
+#PANDOC_OPTIONS += --bibliography biblio.bib
+#PANDOC_OPTIONS += --filter=pandoc-citeproc
+#PANDOC_OPTIONS += --citeproc --csl chicago-fullnote-bibliography.csl CITATIONS
+#PANDOC_OPTIONS += --css $(CSS_FILE)
 
 INPUT_FORMAT = markdown+header_attributes+multiline_tables
 
-EPUB_CSS_FILE = css/default-pandoc.css
+#CSS_FILE = $(TOP_DIR)/src/css/default-pandoc.css
+EPUB_CSS_FILE = $(TOP_DIR)/src/css/default-pandoc.css
 
-#HTML_TEMPLATE = templates/bootstrap_menu.html
+#HTML_TEMPLATE = $(TOP_DIR)/pandoc/templates/bootstrap_menu.html
 HTML_TEMPLATE = $(TOP_DIR)/pandoc/templates/uikit.html
 
 ################################################################################
@@ -98,6 +104,7 @@ HTML_TEMPLATE = $(TOP_DIR)/pandoc/templates/uikit.html
 
 main.html: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --from $(INPUT_FORMAT) -o $@ main.md
+	#pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --css $(CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.md
 
 main.epub: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) -c $(EPUB_CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.md
@@ -143,3 +150,6 @@ spellcheck_result.txt: main.html
 	          echo "WARNING: spelling errors detected"; \
 	      fi; \
 	  fi
+
+################################################################################
+################################################################################

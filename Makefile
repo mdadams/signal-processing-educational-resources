@@ -1,6 +1,9 @@
 SUBDIRS = \
   src \
 
+.PHONY: default
+default: install
+
 .PHONY: all world clean install
 all world clean install:
 	for subdir in $(SUBDIRS); do \
