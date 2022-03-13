@@ -14,8 +14,8 @@ on GitHub:
 
 # Open-Access Textbooks
 
-Some open-access textbooks on signal processing include (sorted
-alphabetically by last name of first author):
+Some open-access textbooks on signal processing include the following
+(which are sorted alphabetically by the last name of the first author):
 
 1. Michael D. Adams,
    Signals and Systems,
