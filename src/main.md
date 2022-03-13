@@ -28,6 +28,7 @@ alphabetically by last name of first author):
      - [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
      - [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/signals_and_systems-4.0.pdf).
      - [Git Repository](https://github.com/mdadams/sigsysbook_companion.git).
+     - [Solutions Manual](https://www.ece.uvic.ca/~mdadams/sigsysbook/#solutions_manual).
 
 1. Michael D. Adams,
    Lecture Slides for Signals and Systems,
@@ -40,7 +41,6 @@ alphabetically by last name of first author):
      - [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
      - [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/lecture_slides_for_signals_and_systems-4.0.pdf).
      - [Git Repository](https://github.com/mdadams/sigsysbook_companion.git).
-     - [Solutions Manual](https://www.ece.uvic.ca/~mdadams/sigsysbook/#solutions_manual).
 
 1. Michael D. Adams,
    Multiresolution Signal and Geometry Processing:
