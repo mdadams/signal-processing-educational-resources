@@ -102,8 +102,8 @@ alphabetically by last name of first author):
    xxii+272 pages.
      - [Textbook Web Site](https://www.fourierandwavelets.org).
      - [Textbook (PDF)](https://www.fourierandwavelets.org/FWSP_a3.2_2013.pdf).
-     - [Slide Decks](https://www.fourierandwavelets.org/resources.php#Slides).
-     - [Mathematica Resources](https://www.fourierandwavelets.org/resources.php#Mathematica).
+     - some slides decks and Mathematica resources are also available from
+       textbook web site
 
 1. Masaaki Nagahara,
    Sparsity Methods for Systems and Control,
@@ -178,7 +178,7 @@ alphabetically by last name of first author):
    San Diego, CA, USA,
    1999,
    xiv+650 pages.
-     - [Textbook Web Site](http://www.dspguide.com).
+     - [Main Textbook Web Site](http://www.dspguide.com).
      - [Analog Devices Textbook Web Site](https://www.analog.com/en/education/education-library/scientist_engineers_guide.html).
      - [Textbook (Zip)](https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_dspguide.zip).
 
@@ -187,20 +187,27 @@ alphabetically by last name of first author):
    2020\.
      - [Textbook Web Site](http://faculty.washington.edu/stiber/pubs/Signal-Computing).
      - [Textbook (PDF)](http://faculty.washington.edu/stiber/pubs/Signal-Computing/Signal%20Computing.pdf).
-     - [GitHub](https://github.com/stiber/Signal-Computing).
+     - [GitHub Repository](https://github.com/stiber/Signal-Computing.git).
+     - [Laboratory Manual (PDF)](http://faculty.washington.edu/stiber/pubs/Signal-Computing/Lab%20Book.pdf).
+     - some MATLAB code, audio files also available from textbook web site
 
 1. Martin Vetterli, Jelena Kovačević, and Vivek K. Goyal,
    Foundations of Signal Processing,
    May 2014,
-   715 pages.
+   xxvi+715 pages.
      - [Textbook Web Site](https://www.fourierandwavelets.org).
      - [Textbook (PDF)](https://www.fourierandwavelets.org/FSP_v1.1_2014.pdf).
+     - some slides decks and Mathematica resources are also available from
+       textbook web site
 
 1. Martin Vetterli and Jelena Kovačević,
    Wavelets and Subband Coding,
-   2007\.
+   2007,
+   xvi+505 pages.
      - [Textbook Web Site](https://waveletsandsubbandcoding.org).
      - [Textbook (PDF)](https://waveletsandsubbandcoding.org/Repository/VetterliKovacevic95_Manuscript.pdf).
+     - [Slides (Zip)](https://waveletsandsubbandcoding.org/Repository/VetterliKovacevic95_Slides.zip).
+     - [Solutions Manual](https://waveletsandsubbandcoding.org/instructors.htm).
 
 # Video Lectures
 
