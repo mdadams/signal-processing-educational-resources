@@ -66,6 +66,9 @@ Vivek
 Willsky
 Wornell
 xliv
-XXXX
 Zhang
 Zue
+Baraniuk
+et
+al
+Libretexts

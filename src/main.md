@@ -89,6 +89,11 @@ Some open-access textbooks on signal processing include the following
      - [Textbook Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
      - [Textbook (PDF)](https://www.iastatedigitalpress.com/plugins/books/68/format/96/).
 
+1. Baraniuk et al.,
+   Signals and Systems,
+   Rice University, Houston, TX, USA.
+     - [Textbook (PDF)](https://batch.libretexts.org/print/Finished/eng-22833/Full.pdf).
+
 1. C. Sidney Burrus,
    Fast Fourier Transforms,
    Rice University,
