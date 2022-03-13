@@ -11,7 +11,7 @@ This document is generated from the contents of following Git repository
 on GitHub:
   - <https://github.com/mdadams/signal-processing-educational-resources.git>
 
-# Open-Access Textbooks
+# Open-Access Textbooks and Lecture Slides
 
 1. Michael D. Adams,
    Signals and Systems,
@@ -23,6 +23,7 @@ on GitHub:
    ISBN 978-0-9879197-7-9 (PDF).
    [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
    [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/signals_and_systems-4.0.pdf).
+   [Git Repository](https://github.com/mdadams/sigsysbook_companion.git).
 
 1. Michael D. Adams,
    Lecture Slides for Signals and Systems,
@@ -34,6 +35,7 @@ on GitHub:
    ISBN 978-0-9879197-9-3 (PDF).
    [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
    [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/lecture_slides_for_signals_and_systems-4.0.pdf).
+   [Git Repository](https://github.com/mdadams/sigsysbook_companion.git).
 
 1. Michael D. Adams,
    Multiresolution Signal and Geometry Processing:
