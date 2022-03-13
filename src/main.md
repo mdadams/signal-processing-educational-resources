@@ -77,6 +77,15 @@ alphabetically by last name of first author):
      - [Textbook Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
      - [Textbook (PDF)](https://www.iastatedigitalpress.com/plugins/books/68/format/96/).
 
+1. C. Sidney Burrus,
+   Fast Fourier Transforms,
+   Rice University,
+   2012,
+   iv+248 pages.
+     - [Web Site](https://open.umn.edu/opentextbooks/textbooks/fast-fourier-transforms).
+     - [Book (PDF)](https://open.umn.edu/opentextbooks/formats/212).
+     - [Book (EPUB)](https://open.umn.edu/opentextbooks/formats/213).
+
 1. Allen B. Downey,
    Think DSP --- Digital Signal Processing in Python,
    Version 1.1.4,
@@ -95,6 +104,15 @@ alphabetically by last name of first author):
    xiv+463 pages.
      - [Textbook Web Site](https://ee.stanford.edu/~gray/sp.html).
      - [Textbook (PDF)](https://ee.stanford.edu/~gray/sp.pdf).
+
+1. Don Johnson,
+   Fundamentals of Electrical Engineering I,
+   Rice University,
+   2014,
+   vi+326 pages.
+     - [Web Site](https://open.umn.edu/opentextbooks/textbooks/337).
+     - [Book (PDF)](https://cnx.org/exports/778e36af-4c21-4ef7-9c02-dae860eb7d14@9.72.pdf/fundamentals-of-electrical-engineering-i-9.72.pdf).
+     - [Book (Online HTML)](https://open.umn.edu/opentextbooks/formats/402).
 
 1. Jelena Kovačević, Vivek K. Goyal, and Martin Vetterli,
    Fourier and Wavelet Signal Processing,
@@ -170,6 +188,23 @@ alphabetically by last name of first author):
    xxiii+475 pages.
      - [Textbook Web Site](https://www.nowpublishers.com/article/BookDetails/9781680839784).
      - [Textbook (PDF)](https://nowpublishers.com/article/DownloadEBook/9781680839784?format=pdf).
+
+1. Julius O. Smith III,
+   Mathematics of the Discrete Fourier Transform With Audio Applications,
+   Second edition,
+   Center for Computer Research in Music and Acoustics,
+   Department of Music,
+   Stanford University,
+   Stanford, CA, USA.
+     - [Book (Online HTML)](https://ccrma.stanford.edu/~jos/mdft).
+
+1. Julius O. Smith III,
+   Introduction to Digital Filters With Audio Applications,
+   Center for Computer Research in Music and Acoustics,
+   Department of Music,
+   Stanford University,
+   Stanford, CA, USA.
+     - [Book (Online HTML)](https://ccrma.stanford.edu/~jos/filters).
 
 1. Steven W. Smith,
    The Scientist and Engineer's Guide to Digital Signal Processing,
