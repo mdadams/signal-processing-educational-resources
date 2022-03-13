@@ -5,6 +5,18 @@ geometry: margin=1in
 output: pdf_document
 ---
 
+# Obtaining This Document
+
+The latest version of this document is available in several formats and
+can be obtained from:
+
+  - Online Single-Page HTML:
+    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/html>
+  - Online Multi-Page HTML:
+    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/html_split>
+  - EPUB:
+    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/main.epub>
+
 # Git Repository
 
 This document is generated from the contents of following Git repository
@@ -288,6 +300,8 @@ Some video-lecture series on signal processing include:
 
 # Online Courses
 
+Some online courses on various topics related to signal processing include:
+
 1. Hari Balakrishnan and George Verghese,
    Introduction to EECS II: Digital Communication Systems,
    MIT OpenCourseWare,
@@ -423,7 +437,4 @@ Some video-lecture series on signal processing include:
       - [Lecture Slides](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/lecture-slides).
       - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/assignments).
       - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/exams).
-
-
-
 
