@@ -9,9 +9,13 @@ output: pdf_document
 
 This document is generated from the contents of following Git repository
 on GitHub:
+
   - <https://github.com/mdadams/signal-processing-educational-resources.git>
 
-# Open-Access Textbooks and Lecture Slides
+# Open-Access Textbooks
+
+Some open-access textbooks on signal processing include (sorted
+alphabetically by last name of first author):
 
 1. Michael D. Adams,
    Signals and Systems,
@@ -36,6 +40,7 @@ on GitHub:
      - [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/sigsysbook).
      - [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/downloads/lecture_slides_for_signals_and_systems-4.0.pdf).
      - [Git Repository](https://github.com/mdadams/sigsysbook_companion.git).
+     - [Solutions Manual](https://www.ece.uvic.ca/~mdadams/sigsysbook/#solutions_manual).
 
 1. Michael D. Adams,
    Multiresolution Signal and Geometry Processing:
@@ -48,6 +53,7 @@ on GitHub:
    ISBN 978-1-55058-507-0 (print).
      - [Textbook Web Site](https://www.ece.uvic.ca/~mdadams/waveletbook).
      - [Textbook (PDF)](https://www.ece.uvic.ca/~mdadams/waveletbook/downloads/multiresolution_signal_and_geometry_processing-2013-09-26-uvic-v2.pdf).
+     - [Solutions Manual](https://www.ece.uvic.ca/~mdadams/waveletbook/#solutions_manual).
 
 1. Michael D. Adams,
    Lecture Slides for Multiresolution Signal and Geometry Processing
@@ -68,7 +74,7 @@ on GitHub:
    Aug. 2021,
    [doi: 10.31274/isudp.2021.68](https://www.doi.org/10.31274/isudp.2021.68),
    60 pages.
-     - [Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
+     - [Textbook Web Site](https://www.iastatedigitalpress.com/plugins/books/68/).
      - [Textbook (PDF)](https://www.iastatedigitalpress.com/plugins/books/68/format/96/).
 
 1. Allen B. Downey,
@@ -78,75 +84,108 @@ on GitHub:
    Needham, MA, USA,
    2014,
    xii+141 pages.
-     - [Web Site](https://greenteapress.com/wp/think-dsp).
+     - [Textbook Web Site](https://greenteapress.com/wp/think-dsp).
      - [Textbook (PDF)](http://greenteapress.com/thinkdsp/thinkdsp.pdf).
      - [Textbook (Online HTML)](https://greenteapress.com/thinkdsp/html/index.html).
      - [Git Repository](https://github.com/AllenDowney/ThinkDSP).
 
-1. Robert M. Gray,
+1. Robert M. Gray and Lee D. Davisson,
    Introduction to Statistical Signal Processing,
-     - [Web Site](https://ee.stanford.edu/~gray/sp.html).
+   2011,
+   xiv+463 pages.
+     - [Textbook Web Site](https://ee.stanford.edu/~gray/sp.html).
      - [Textbook (PDF)](https://ee.stanford.edu/~gray/sp.pdf).
 
-1. Jelena Kovačević, Vivek K Goyal, and Martin Vetterli,
+1. Jelena Kovačević, Vivek K. Goyal, and Martin Vetterli,
    Fourier and Wavelet Signal Processing,
    Jan. 2013,
-   272 pages.
+   xxii+272 pages.
      - [Textbook Web Site](https://www.fourierandwavelets.org).
      - [Textbook (PDF)](https://www.fourierandwavelets.org/FWSP_a3.2_2013.pdf).
+     - [Slide Decks](https://www.fourierandwavelets.org/resources.php#Slides).
+     - [Mathematica Resources](https://www.fourierandwavelets.org/resources.php#Mathematica).
 
 1. Masaaki Nagahara,
    Sparsity Methods for Systems and Control,
    Boston-Delft: now publishers,
-   2020\.
-   <http://dx.doi.org/10.1561/9781680837254>
-     - [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680837247).
+   Sept\. 2020\,
+   [doi:10.1561/9781680837254](http://dx.doi.org/10.1561/9781680837254),
+   x+204 pages.
+     - [Textbook Web Site](https://www.nowpublishers.com/article/BookDetails/9781680837247).
      - [Textbook (PDF)](https://nowpublishers.com/article/DownloadEBook/9781680837247?format=pdf).
 
 1. Sophocles J. Orfanidis,
    Introduction to Signal Processing,
+   Department of Electrical and Computer Engineering,
+   Rutgers University,
+   Piscataway, NJ, USA,
    2010,
-   783 pages.
-     - [Web Site](https://www.ece.rutgers.edu/~orfanidi/intro2sp).
+   xvi+783 pages.
+     - [Textbook Web Site](https://www.ece.rutgers.edu/~orfanidi/intro2sp).
      - [Textbook (PDF)](https://www.ece.rutgers.edu/~orfanidi/intro2sp/orfanidis-i2sp.pdf).
+     - [C Code (Zip)](http://eceweb1.rutgers.edu/~orfanidi/intro2sp/c.zip).
+     - [MATLAB Code (Zip)](http://eceweb1.rutgers.edu/~orfanidi/intro2sp/m.zip).
+     - [Solutions Manual (Zip)](http://eceweb1.rutgers.edu/~orfanidi/intro2sp/solutions.zip).
 
 1. Sophocles J. Orfanidis,
    Optimum Signal Processing,
    Second edition,
    Department of Electrical and Computer Engineering,
-   Rutgers University, Piscataway, NJ, USA.
+   Rutgers University, Piscataway, NJ, USA,
+   2007,
+   xiii+377 pages.
      - [Textbook Web Site](https://www.ece.rutgers.edu/~orfanidi/osp2e).
      - [Textbook (PDF)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e.pdf).
+     - [Solutions Manual (PDF)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-man.pdf).
+     - [C Code (Zip)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-c.zip).
+     - [MATLAB Code (Zip)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-m.zip).
+     - [Fortran Code (Zip)](http://eceweb1.rutgers.edu/~orfanidi/osp2e/osp2e-f.zip).
 
 1. Sophocles J. Orfanidis,
    Applied Optimum Signal Processing,
-     - [Web Site](https://www.ece.rutgers.edu/~orfanidi/aosp).
+   Department of Electrical and Computer Engineering,
+   Rutgers University,
+   Piscataway, NJ, USA,
+   2018,
+   x+994 pages.
+     - [Textbook Web Site](https://www.ece.rutgers.edu/~orfanidi/aosp).
      - [Textbook (PDF)](https://www.ece.rutgers.edu/~orfanidi/aosp/aosp-1up.pdf).
+     - [MATLAB Toolbox (Zip)](http://eceweb1.rutgers.edu/~orfanidi/aosp/osp_toolbox.zip)
 
 1. Paolo Prandoni and Martin Vetterli,
    Signal Processing for Communications,
-   2008\.
-     - [Web Site](https://www.sp4comm.org/index.html).
+   CRC Press,
+   2008,
+   xv+371 pages.
+     - [Textbook Web Site](https://www.sp4comm.org/index.html).
      - [Textbook (PDF)](https://www.sp4comm.org/docs/sp4comm_corrected.pdf).
+     - [Solutions Manual](https://www.sp4comm.org/instructors.html).
 
 1. Sadasivan Puthusserypady,
    Applied Signal Processing,
-   2021,
-   Boston-Delft: now publishers,
-   <http://dx.doi.org/10.1561/9781680839791>
-     - [Web Site](https://www.nowpublishers.com/article/BookDetails/9781680839784).
+   now publishers,
+   Hanover, MA, USA,
+   March 2021,
+   [10.1561/9781680839791](http://dx.doi.org/10.1561/9781680839791),
+   xxiii+475 pages.
+     - [Textbook Web Site](https://www.nowpublishers.com/article/BookDetails/9781680839784).
      - [Textbook (PDF)](https://nowpublishers.com/article/DownloadEBook/9781680839784?format=pdf).
 
 1. Steven W. Smith,
    The Scientist and Engineer's Guide to Digital Signal Processing,
-   1999\.
-     - [Web Site](http://www.dspguide.com).
-     - [Web Site](https://www.analog.com/en/education/education-library/scientist_engineers_guide.html).
+   Second edition,
+   California Technical Publishing,
+   San Diego, CA, USA,
+   1999,
+   xiv+650 pages.
+     - [Textbook Web Site](http://www.dspguide.com).
+     - [Analog Devices Textbook Web Site](https://www.analog.com/en/education/education-library/scientist_engineers_guide.html).
+     - [Textbook (Zip)](https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_dspguide.zip).
 
 1. Michael Stiber, Bilin Zhang Stiber, and Eric C. Larson,
    Signal Computing: Digital Signals in the Software Domain,
    2020\.
-     - [Web Site](http://faculty.washington.edu/stiber/pubs/Signal-Computing).
+     - [Textbook Web Site](http://faculty.washington.edu/stiber/pubs/Signal-Computing).
      - [Textbook (PDF)](http://faculty.washington.edu/stiber/pubs/Signal-Computing/Signal%20Computing.pdf).
      - [GitHub](https://github.com/stiber/Signal-Computing).
 
@@ -160,20 +199,23 @@ on GitHub:
 1. Martin Vetterli and Jelena Kovačević,
    Wavelets and Subband Coding,
    2007\.
-     - [Web Site](https://waveletsandsubbandcoding.org).
+     - [Textbook Web Site](https://waveletsandsubbandcoding.org).
      - [Textbook (PDF)](https://waveletsandsubbandcoding.org/Repository/VetterliKovacevic95_Manuscript.pdf).
 
-# Videos
+# Video Lectures
+
+Some video-lecture series on signal processing include:
 
 1. Michael D. Adams,
    Lecture Series for Continuous-Time Signals and Systems.
-     - [Time-Indexed Playlist (HTML)](https://www.ece.uvic.ca/~frodo/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.html).
-     - [Time-Indexed Playlist (PDF)](https://www.ece.uvic.ca/~frodo/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.pdf).
-     - [Annotated Examples (PDF)](https://www.ece.uvic.ca/~frodo/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_examples.pdf).
+     - [Time-Indexed Playlist (HTML)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.html).
+     - [Time-Indexed Playlist (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.pdf).
+     - [Annotated Examples (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_examples.pdf).
      - [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
 
-1. Iman Moazzen.
-   Signal Processing Hacks with Iman Moazzen - Continuous-Time Domain Tutorials.
+1. Iman Moazzen,
+   Signal Processing Hacks with Iman Moazzen ---
+   Continuous-Time Domain Tutorials.
      - [YouTube playlist](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
 
 1. Alan V. Oppenheim,
