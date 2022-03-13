@@ -292,10 +292,11 @@ Some video-lecture series on signal processing include:
    Signal Processing Hacks with Iman Moazzen ---
    Continuous-Time Domain Tutorials.
      - [YouTube playlist](https://www.youtube.com/playlist?list=PLJ-OcUCIty7evBmHvYRv66RcuziszpSFB).
+     - [Web page](https://www.sphackswithiman.com/html/courses.html).
 
 1. Alan V. Oppenheim,
    MIT RES.6-008 Digital Signal Processing,
-   1975
+   1975\.
      - [YouTube Playlist](https://www.youtube.com/playlist?list=PL8157CA8884571BA2).
 
 1. Rich Radke,
@@ -312,7 +313,7 @@ Some video-lecture series on signal processing include:
      - [YouTube Playlist](https://youtube.com/playlist?list=PL9567DFCA3A66F299).
 
 1. Barry Van Veen,
-   Signal Processing Channel on YouTube,
+   Signal Processing Channel on YouTube.
      - [YouTube Channel](https://www.youtube.com/user/allsignalprocessing).
 
 # Online Courses
