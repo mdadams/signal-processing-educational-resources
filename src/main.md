@@ -249,9 +249,13 @@ Some open-access textbooks on signal processing include the following
 Some video-lecture series on signal processing include:
 
 1. Michael D. Adams,
-   Lecture Series for Continuous-Time Signals and Systems.
+   Lecture Series for Continuous-Time Signals and Systems (ECE 260),
+   Department of Electrical and Computer Engineering,
+   University of Victoria, Victoria, BC, Canada,
+   Summer 2020.
      - [Time-Indexed Playlist (HTML)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.html).
      - [Time-Indexed Playlist (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/video_lectures.pdf).
+     - [Lecture Slides (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_slides.pdf).
      - [Annotated Examples (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_examples.pdf).
      - [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
 
@@ -284,7 +288,142 @@ Some video-lecture series on signal processing include:
 
 # Online Courses
 
-1. MIT OpenCourseWare.
+1. Hari Balakrishnan and George Verghese,
+   Introduction to EECS II: Digital Communication Systems,
+   MIT OpenCourseWare,
+   Course Number 6.02,
+   Fall 2012.
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012).
+     - [Video Lectures](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/lecture-videos).
+     - [Online Textbooks](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/readings).
+     - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/assignments).
+     - [Lecture Slides](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/lecture-slides).
+     - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/exams).
+
+1. Gari Clifford, John Fisher, Julie Greenberg, and William Wells,
+   Biomedical Signal and Image Processing,
+   MIT OpenCourseWare,
+   Course Number HST.582J/6.555J/16.456J,
+   Spring 2007.
+     - [Course Web Site](https://ocw.mit.edu/courses/health-sciences-and-technology/hst-582j-biomedical-signal-and-image-processing-spring-2007).
+     - [Lecture Notes](https://ocw.mit.edu/courses/health-sciences-and-technology/hst-582j-biomedical-signal-and-image-processing-spring-2007/lecture-notes)
+     - [Assignments](https://ocw.mit.edu/courses/health-sciences-and-technology/hst-582j-biomedical-signal-and-image-processing-spring-2007/assignments).
+
+1. Dennis Freeman,
+   Signals and Systems,
+   MIT OpenCourseWare,
+   Course Number 6.003,
+   Fall 2011.
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011).
+     - [Video Lectures](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/lecture-videos).
+     - [Online Textbooks](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/readings).
+     - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/assignments).
+     - [Lecture Notes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/lecture-notes).
+     - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011/exams).
+
+1. Alan V. Oppenheim,
+   Discrete-Time Signal Processing,
+   MIT OpenCourseWare,
+   Course Number 6.341,
+   Fall 2005.
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-341-discrete-time-signal-processing-fall-2005).
+     - [Lecture Notes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-341-discrete-time-signal-processing-fall-2005/lecture-notes).
+     - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-341-discrete-time-signal-processing-fall-2005/assignments).
+     - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-341-discrete-time-signal-processing-fall-2005/exams).
+
+1. Alan V. Oppenheim and George Verghese,
+   Introduction to Communication, Control, and Signal Processing,
+   MIT OpenCourseWare,
+   Course Number 6.011,
+   Spring 2010. 
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-introduction-to-communication-control-and-signal-processing-spring-2010)
+     - [Lecture Notes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-introduction-to-communication-control-and-signal-processing-spring-2010/readings).
+     - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-introduction-to-communication-control-and-signal-processing-spring-2010/exams).
+
+1. Alan V. Oppenheim,
    Digital Signal Processing,
-   2011.
-     - [Link](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
+   MIT OpenCourseWare,
+   Course Number 6.008?,
+   Spring 2011.
+     - [Course Web Site](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011).
+     - [Video Lectures](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011/video-lectures)
+     - [Lectures Notes and Assignments](https://ocw.mit.edu/resources/res-6-008-digital-signal-processing-spring-2011/study-materials)
+
+1. Alan V. Oppenheim,
+   Signals and Systems,
+   MIT OpenCourseWare,
+   Course Number 6.007?,
+   Spring 2011.
+     - [Course Web Site](https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011).
+     - [Video Lectures](https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/video-lectures).
+     - [Lecture Notes](https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/lecture-notes).
+     - [Assignments](https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/assignments).
+
+1. Paul Penfield and Seth Lloyd,
+   Information and Entropy,
+   MIT OpenCourseWare,
+   Course Number 6.050J/2.110J,
+   Spring 2008.
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-050j-information-and-entropy-spring-2008).
+     - [Online Text](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-050j-information-and-entropy-spring-2008/syllabus/index.htm).
+     - [Lectures Notes and Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-050j-information-and-entropy-spring-2008/resource-index/index.htm).
+
+1. Ramesh Raskar,
+   Computational Camera and Photography,
+   MIT OpenCourseWare,
+   Course Number MAS.531/MAS.131,
+   Fall 2009.
+     - [Course Web Site](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-531-computational-camera-and-photography-fall-2009).
+     - [Audio Lecture and Lecture Notes](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-531-computational-camera-and-photography-fall-2009/lecture-notes).
+     - [Assignments](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-531-computational-camera-and-photography-fall-2009/assignments).
+
+1. Derek Rowell,
+   Signal Processing: Continuous and Discrete,
+   MIT OpenCourseWare,
+   Course Number 2.161,
+   Fall 2008.
+     - [Courses Web Site](https://ocw.mit.edu/courses/mechanical-engineering/2-161-signal-processing-continuous-and-discrete-fall-2008)
+     - [Lecture Notes](https://ocw.mit.edu/courses/mechanical-engineering/2-161-signal-processing-continuous-and-discrete-fall-2008/lecture-notes)
+     - [Assignments](https://ocw.mit.edu/courses/mechanical-engineering/2-161-signal-processing-continuous-and-discrete-fall-2008/assignments)
+     - [Exams](https://ocw.mit.edu/courses/mechanical-engineering/2-161-signal-processing-continuous-and-discrete-fall-2008/exams)
+
+1. Kenneth Stevens,
+   Speech Communication,
+   MIT OpenCourseWare,
+   Course Number 6.541J/24.968J/HST.710J,
+   Spring 2004.
+     - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-541j-speech-communication-spring-2004).
+     - [Lecture Notes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-541j-speech-communication-spring-2004/lecture-notes).
+     - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-541j-speech-communication-spring-2004/assignments).
+
+1. Gilbert Strang and Kevin Amaratunga,
+   Wavelets, Filter Banks and Applications,
+   MIT OpenCourseWare,
+   Course Number 18.327/1.130,
+   Spring 2003.
+     - [Course Web Site](https://ocw.mit.edu/courses/mathematics/18-327-wavelets-filter-banks-and-applications-spring-2003).
+     - [Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-327-wavelets-filter-banks-and-applications-spring-2003/lecture-notes).
+     - [Assignments](https://ocw.mit.edu/courses/mathematics/18-327-wavelets-filter-banks-and-applications-spring-2003/assignments).
+
+1. Gilbert Strang,
+   Matrix Methods in Data Analysis, Signal Processing, and Machine Learning,
+   MIT OpenCourseWare,
+   Course Number 18.065/18.0651,
+   Spring 2018.
+     - [Course Web Site](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018).
+     - [Video Lectures](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/video-lectures/index.htm).
+     - [Assignments](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/assignments/index.htm).
+
+1. George Verghese, Alan V. Oppenheim, and Peter Hagelstein,
+    Signals, Systems and Inference,
+   MIT OpenCourseWare,
+    Course Number 6.011,
+    Spring 2018.
+      - [Course Web Site](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018).
+      - [Lecture Slides](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/lecture-slides).
+      - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/assignments).
+      - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/exams).
+
+
+
+
