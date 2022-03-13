@@ -5,6 +5,12 @@ geometry: margin=1in
 output: pdf_document
 ---
 
+# Git Repository
+
+This document is generated from the contents of following Git repository
+on GitHub:
+  - <https://github.com/mdadams/signal-processing-educational-resources.git>
+
 # Open-Access Textbooks
 
 1. Michael D. Adams,
