@@ -140,6 +140,18 @@ Some open-access textbooks on signal processing include the following
      - some slides decks and Mathematica resources are also available from
        textbook web site
 
+1. Andrew D. Lewis,
+   A Mathematical Introduction to Signals and Systems,
+   Department of Math and Statistics,
+   Queen's University, Kingston, ON, Canada.
+   5 volumes.
+     - [Web Site](https://mast.queensu.ca/~andrew/teaching/SigSys).
+     - [Volume 1 (PDF)](https://mast.queensu.ca/~andrew/teaching/SigSys/pdf/volume1.pdf).
+     - [Volume 2 (PDF)](https://mast.queensu.ca/~andrew/teaching/SigSys/pdf/volume2.pdf).
+     - [Volume 3 (PDF)](https://mast.queensu.ca/~andrew/teaching/SigSys/pdf/volume3.pdf).
+     - [Volume 4 (PDF)](https://mast.queensu.ca/~andrew/teaching/SigSys/pdf/volume4.pdf).
+     - [Volume 5 (PDF)](https://mast.queensu.ca/~andrew/teaching/SigSys/pdf/volume5.pdf).
+
 1. Masaaki Nagahara,
    Sparsity Methods for Systems and Control,
    Boston-Delft: now publishers,
