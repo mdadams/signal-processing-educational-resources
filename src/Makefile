@@ -36,16 +36,17 @@ extra_documents: main.pdf
 
 # The spellcheck format performs a spell check on the document.
 .PHONY: spellcheck
-spellcheck: spellcheck_result.txt
+spellcheck: spellcheck_done
 
 # The clean target removes all files generated during the build process.
 .PHONY: clean
 clean:
 	rm -f main.html main.pdf main.epub main.tex main.texi
 	rm -rf main_html
-	rm -f spellcheck_result.txt
 	rm -f spellcheck_expected_sorted.txt
 	rm -f missfont.log
+	rm -f spellcheck_result.txt
+	rm -f spellcheck_done
 
 # The install target installs the build document (in various formats)
 # in the directory $(INSTALL_DIR).
@@ -73,6 +74,8 @@ install: all
 ################################################################################
 
 SPELLCHECK_DIR = $(TOP_DIR)/etc
+ASPELL_FRONTEND = ../bin/aspell_frontend
+COMPARE_WORD_LISTS = ../bin/compare_word_lists
 
 ################################################################################
 # Establish Pandoc settings.
@@ -128,28 +131,27 @@ main.texi: $(SOURCES) $(GENERATED_MARKDOWN)
 # Rule for spellchecking.
 ################################################################################
 
-spellcheck_result.txt: main.html
-	rm -f $@
-	rm -f spellcheck_expected_sorted.txt
-	sort $(SPELLCHECK_DIR)/ignored_words.txt | \
-	  uniq > spellcheck_expected_sorted.txt
+spellcheck_done: main.html
+	rm -f spellcheck_result.txt 
 	PATH="$(TOP_DIR)/bin:$$PATH" pandoc --from $(INPUT_FORMAT) \
 	  --lua-filter $(TOP_DIR)/pandoc/filters/spellcheck.lua \
-	  main.md | sort | uniq > $@
-	@status=0; \
-	  diff -q spellcheck_expected_sorted.txt $@ || \
-	  status=1; \
+	  main.md | sort | uniq > spellcheck_result.txt
+	status=0; \
+	  $(COMPARE_WORD_LISTS) -q \
+	    $(SPELLCHECK_DIR)/ignored_words.txt spellcheck_result.txt || status=1; \
 	  if [ $$status -ne 0 ]; then \
 	      echo "SPELLING ERRORS DETECTED:"; \
-	      diff -u spellcheck_expected_sorted.txt $@ | \
-		  grep '^[+-]'; \
+	      $(COMPARE_WORD_LISTS) \
+	        $(SPELLCHECK_DIR)/ignored_words.txt spellcheck_result.txt; \
 	      if [ $(DOC_SPELLCHECK_MUST_PASS) -ne 0 ]; then \
 	          echo "ERROR: spelling errors detected"; \
 	          exit 1; \
 	      else \
 	          echo "WARNING: spelling errors detected"; \
+	          exit 0; \
 	      fi; \
-	  fi
+	  fi; \
+	  touch spellcheck_done
 
 ################################################################################
 ################################################################################
