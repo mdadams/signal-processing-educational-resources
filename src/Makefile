@@ -96,25 +96,25 @@ HTML_TEMPLATE = $(TOP_DIR)/pandoc/templates/uikit.html
 # Rules for generating the document in various formats.
 ################################################################################
 
-main.html:
+main.html: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --from $(INPUT_FORMAT) -o $@ main.md
 
-main.epub:
+main.epub: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) -c $(EPUB_CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.md
 
-main.pdf:
+main.pdf: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
 
-main.docbook:
+main.docbook: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
 
-main.tex:
+main.tex: $(SOURCES)
 	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) --to latex -o $@ main.md
 
-main_html: main.texi
+main_html: $(SOURCES) main.texi
 	makeinfo --no-validate --force --html -o main_html main.texi
 
-main.texi: $(GENERATED_MARKDOWN)
+main.texi: $(SOURCES) $(GENERATED_MARKDOWN)
 	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
 
 ################################################################################
