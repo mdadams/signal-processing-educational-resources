@@ -295,6 +295,18 @@ Some video-lecture series on signal processing include:
      - [Annotated Examples (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_examples.pdf).
      - [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
 
+1. Dennis Freeman,
+   MIT 6.003 Signals and Systems,
+   Fall 2011\.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLUl4u3cNGP61kdPAOC7CzFjJZ8f1eMUxs).
+     - [Associated Course](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011).
+
+1. Jeremy Kepner,
+   MIT D4M: Signal Processing on Databases,
+   Fall 2012\.
+     - [YouTube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP62DPmPLrVyYfk3-Try_ftJJ).
+     - [Associated Course](http://ocw.mit.edu/RESLL-005F12).
+
 1. Iman Moazzen,
    Signal Processing Hacks with Iman Moazzen ---
    Continuous-Time Domain Tutorials.
@@ -302,12 +314,20 @@ Some video-lecture series on signal processing include:
      - [Web page](https://www.sphackswithiman.com/html/courses.html).
 
 1. Alan V. Oppenheim,
-   MIT RES.6-008 Digital Signal Processing,
+   MIT RES.6.008 Digital Signal Processing,
    1975\.
      - [YouTube Playlist](https://www.youtube.com/playlist?list=PL8157CA8884571BA2).
+     - [Associated Course](http://ocw.mit.edu/RES6-008S11).
+
+1. Alan V. Oppenheim,
+   MIT RES.6.007 Signals and Systems,
+   1987\.
+      - [YouTube playlist](https://youtube.com/playlist?list=PL41692B571DD0AF9B).
+      - [Associated Course](http://ocw.mit.edu/RES-6.007S11).
 
 1. Rich Radke,
-   Digital Signal Processing (ECSE-4530) Lectures, Fall 2014.
+   Digital Signal Processing (ECSE-4530) Lectures,
+   Fall 2014.
    Lectures from Fall 2014's offering of ECSE-4530, Digital Signal Processing.
    Rensselaer Polytechnic Institute, USA.
      - [YouTube Playlist](https://youtube.com/playlist?list=PLuh62Q4Sv7BUSzx5Jr8Wrxxn-U10qG1et).
@@ -318,6 +338,13 @@ Some video-lecture series on signal processing include:
    Department of Electrical Engineering,
    Indian Institute of Technology, Delhi, India.
      - [YouTube Playlist](https://youtube.com/playlist?list=PL9567DFCA3A66F299).
+
+1. Gilbert Strang,
+   MIT 18.065 Matrix Methods in Data Analysis, Signal Processing, and
+   Machine Learning,
+   Spring 2018\.
+     - [YouTube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k).
+     - [Associated Course](https://ocw.mit.edu/18-065S18).
 
 1. Barry Van Veen,
    Signal Processing Channel on YouTube.
