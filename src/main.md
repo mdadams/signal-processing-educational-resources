@@ -5,24 +5,30 @@ geometry: margin=1in
 output: pdf_document
 ---
 
-# Obtaining This Document
+# Obtaining This Document: The Most Recent Version and Alternate Formats
 
-The latest version of this document is available in several formats and
-can be obtained from:
+The most recent version of this document is available as an online
+HTML document at:
+<____{doc_url}____/latest>.
 
-  - Online Single-Page HTML:
-    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/html>
-  - Online Multi-Page HTML:
-    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/html_split>
-  - EPUB:
-    <https://mdadams.github.io/signal-processing-educational-resources/branch-main/main.epub>
+The version of the document that you are currently reading is available in the
+following formats:
+
+  1. online (HTML) format as a single large HTML document:
+    <____{doc_url}____/____{doc_version}____/html>
+
+  2. EPUB format:
+    <____{doc_url}____/____{doc_version}____/main.epub>
+
+  3. online (HTML) format, split across multiple HTML documents:
+    <____{doc_url}____/____{doc_version}____/html_split>
 
 # Git Repository
 
 This document is generated from the contents of following Git repository
 on GitHub:
 
-  - <https://github.com/mdadams/signal-processing-educational-resources.git>
+  - <____{git_repo_url}____>
 
 # Open-Access Textbooks
 

@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+sed -e 's/\$/\$\$/g' |
+sed -e 's/____{/\$/g' |
+sed -e 's/}____/\$/g'

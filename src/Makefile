@@ -47,6 +47,7 @@ clean:
 	rm -f missfont.log
 	rm -f spellcheck_result.txt
 	rm -f spellcheck_done
+	rm -f main.gen.md main.tmp.md
 
 # The install target installs the build document (in various formats)
 # in the directory $(INSTALL_DIR).
@@ -81,6 +82,10 @@ COMPARE_WORD_LISTS = ../bin/compare_word_lists
 # Establish Pandoc settings.
 ################################################################################
 
+PREPROC_OPTIONS += --variable doc_version="$(DOC_VERSION)"
+PREPROC_OPTIONS += --variable doc_url="https://mdadams.github.io/signal-processing-educational-resources"
+PREPROC_OPTIONS += --variable git_repo_url="https://github.com/mdadams/signal-processing-educational-resources.git"
+
 PANDOC_OPTIONS += --toc --toc-depth 3
 PANDOC_OPTIONS += --number-sections
 PANDOC_OPTIONS += --standalone
@@ -105,27 +110,34 @@ HTML_TEMPLATE = $(TOP_DIR)/pandoc/templates/uikit.html
 # Rules for generating the document in various formats.
 ################################################################################
 
-main.html: $(SOURCES)
-	pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --from $(INPUT_FORMAT) -o $@ main.md
+PANDOC_PREPROCESSOR = $(TOP_DIR)/bin/preprocess
+
+main.gen.md: main.md
+	rm -f main.gen.md
+	$(PANDOC_PREPROCESSOR) < $< > main.tmp.md
+	pandoc $(PREPROC_OPTIONS) --template main.tmp.md main.tmp.md > main.gen.md
+
+main.html: main.gen.md $(SOURCES)
+	pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --from $(INPUT_FORMAT) -o $@ main.gen.md
 	#pandoc $(PANDOC_OPTIONS) --template $(HTML_TEMPLATE) --css $(CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.md
 
-main.epub: $(SOURCES)
-	pandoc $(PANDOC_OPTIONS) -c $(EPUB_CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.md
+main.epub: main.gen.md $(SOURCES)
+	pandoc $(PANDOC_OPTIONS) -c $(EPUB_CSS_FILE) --from $(INPUT_FORMAT) -o $@ main.gen.md
 
-main.pdf: $(SOURCES)
-	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
+main.pdf: main.gen.md $(SOURCES)
+	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.gen.md
 
-main.docbook: $(SOURCES)
-	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
+main.docbook: main.gen.md $(SOURCES)
+	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.gen.md
 
-main.tex: $(SOURCES)
-	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) --to latex -o $@ main.md
+main.tex: main.gen.md $(SOURCES)
+	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) --to latex -o $@ main.gen.md
 
 main_html: $(SOURCES) main.texi
 	makeinfo --no-validate --force --html -o main_html main.texi
 
-main.texi: $(SOURCES) $(GENERATED_MARKDOWN)
-	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.md
+main.texi: main.gen.md $(SOURCES) $(GENERATED_MARKDOWN)
+	pandoc $(PANDOC_OPTIONS) --from $(INPUT_FORMAT) -o $@ main.gen.md
 
 ################################################################################
 # Rule for spellchecking.
