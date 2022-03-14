@@ -1,3 +1,9 @@
+list_directory()
+{
+	local dir="$1"
+	(cd "$dir" && find . -type f -printf "%M %010s %P\n" | sort -k3)
+}
+
 github_ref_to_version()
 {
 	local ref="$1"

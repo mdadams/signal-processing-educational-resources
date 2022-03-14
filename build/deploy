@@ -185,10 +185,14 @@ version_dir="$(get_build_info ghp_name "$github_ref")" || \
   panic "cannot get ghp_name"
 is_branch="$(get_build_info is_branch "$github_ref")" || \
   panic "cannot get is_branch"
+doc_version="$(get_build_info doc_version "$github_ref")" || \
+  panic "cannot get is_branch"
 if [ "$verbose" -ge 1 ]; then
-	echo "version $version"
-	echo "version_dir $version_dir"
+	echo "github_ref $github_ref"
 	echo "is_branch $is_branch"
+	echo "version $version"
+	echo "doc_version $doc_version"
+	echo "version_dir $version_dir"
 fi
 
 ################################################################################
@@ -351,6 +355,12 @@ cp "$top_dir/src/index.html" "$target" || panic "cannot copy $target"
 
 if [ "$verbose" -ge 2 ]; then
 	ls -al "$git_dir"/*
+fi
+
+if [ "$verbose" -ge 2 ]; then
+	echo "========== START OF GIT WORKING TREE DIRECTORY =========="
+	list_directory "$git_dir"
+	echo "========== END OF GIT WORKING TREE DIRECTORY =========="
 fi
 
 # Commit and push all of the changes.

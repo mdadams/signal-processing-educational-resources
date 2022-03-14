@@ -30,6 +30,7 @@ jobs:
       shell: bash
       run: |
         build/build \
+          -v \
           -d ${{runner.temp}}/output \
           -z ${{github.ref}}
     ############################################################
@@ -42,6 +43,7 @@ jobs:
       shell: bash
       run: |
         build/deploy \
+          -v \
           -f \
           -m token \
           -t ${{runner.temp}}/deploy_tmp \

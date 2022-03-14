@@ -59,9 +59,12 @@ source_dir="$top_dir/src"
 install_dir=
 github_ref=
 spellcheck=0
+verbose=0
 
-while getopts d:z:s opt; do
+while getopts d:z:sv opt; do
 	case $opt in
+	v)
+		verbose=$((verbose + 1));;
 	d)
 		install_dir="$OPTARG";;
 	z)
@@ -108,16 +111,27 @@ make_options=()
 make_options+=(GHP_NAME="$ghp_name")
 make_options+=(DOC_VERSION="$doc_version")
 make_options+=(DOC_SPELLCHECK_MUST_PASS="$spellcheck")
+make_options+=(INSTALL_DIR="$install_dir")
 
-echo "GHP_NAME=$ghp_name"
-echo "DOC_VERSION=$doc_version"
-if [ "$spellcheck" -ne 0 ]; then
-	echo "spellchecking is enabled"
+if [ "$verbose" -ge 1 ]; then
+	echo "GHP_NAME=$ghp_name"
+	echo "DOC_VERSION=$doc_version"
+	if [ "$spellcheck" -ne 0 ]; then
+		echo "spellchecking is enabled"
+	fi
 fi
 
 (cd "$source_dir" && \
   make "${make_options[@]}" all) || \
   panic "cannot build document"
 
-make INSTALL_DIR="$install_dir" install || \
+make "${make_options[@]}" install || \
   panic "cannot install release"
+
+if [ "$verbose" -ge 1 ]; then
+	echo "========== START OF INSTALL DIRECTORY =========="
+	list_directory "$install_dir"
+	echo "========== END OF INSTALL DIRECTORY =========="
+fi
+
+exit 0
