@@ -181,16 +181,18 @@ github_user="git"
 #esac
 version="$(get_build_info version "$github_ref")" || \
   panic "cannot get version"
-version_dir="$(get_build_info ghp_name "$github_ref")" || \
+ghp_name="$(get_build_info ghp_name "$github_ref")" || \
   panic "cannot get ghp_name"
 is_branch="$(get_build_info is_branch "$github_ref")" || \
   panic "cannot get is_branch"
 doc_version="$(get_build_info doc_version "$github_ref")" || \
   panic "cannot get is_branch"
+version_dir="$git_dir/$ghp_name"
 if [ "$verbose" -ge 1 ]; then
 	echo "github_ref $github_ref"
-	echo "is_branch $is_branch"
 	echo "version $version"
+	echo "ghp_name $ghp_name"
+	echo "is_branch $is_branch"
 	echo "doc_version $doc_version"
 	echo "version_dir $version_dir"
 fi
