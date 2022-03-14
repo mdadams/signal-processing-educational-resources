@@ -9,19 +9,20 @@ output: pdf_document
 
 The most recent version of this document is available as an online
 HTML document at:
-<____{doc_url}____/latest>.
+
+  - <____{doc_url}____/latest>
 
 The version of the document that you are currently reading is available in the
 following formats:
 
   1. online (HTML) format as a single large HTML document:
-    <____{doc_url}____/____{ghp_name}____/html>
+       - <____{doc_url}____/____{ghp_name}____/html>
 
   2. EPUB format:
-    <____{doc_url}____/____{ghp_name}____/main.epub>
+       - <____{doc_url}____/____{ghp_name}____/main.epub>
 
   3. online (HTML) format, split across multiple HTML documents:
-    <____{doc_url}____/____{ghp_name}____/html_split>
+       - <____{doc_url}____/____{ghp_name}____/html_split>
 
 # Git Repository
 
