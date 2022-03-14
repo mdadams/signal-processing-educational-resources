@@ -37,3 +37,65 @@ github_ref_type()
 	fi
 	echo "$result" || return 1
 }
+
+get_timestamp()
+{
+	date +%Y-%m-%d-%H%M%S
+}
+
+git_tag_to_version()
+{
+	local tag="$1"
+	local pattern='v[0-9]+\.[0-9]+\.[0-9]+'
+	if [[ "$tag" =~ $pattern ]]; then
+		version="$(awk '{print substr($1, 2);}' <<< "$tag")" || return 1
+	else
+		version="$tag"
+	fi
+	echo "$version"
+}
+
+get_build_info()
+{
+	[ $# -eq 2 ] || return 1
+	local key="$1"
+	local github_ref="$2"
+
+	local ref_type="$(awk -v FS="/" '{print $2;}' <<< "$github_ref")" || \
+	  return 1
+	local ref_name="$(awk -v FS="/" '{print $3;}' <<< "$github_ref")" || \
+	  return 1
+	local version="$(git_tag_to_version "$ref_name")" || return 1
+
+	local result
+	case "$key" in
+	version)
+		result="$version"
+		;;
+	ghp_name)
+		if [ "$ref_type" = "heads" ]; then
+			result="branch-$version"
+		else
+			result="$ref_name"
+		fi
+		;;
+	doc_version)
+		if [ "$ref_type" = "heads" ]; then
+			result="$(get_timestamp)" || return 1
+		else
+			result="$version"
+		fi
+		;;
+	is_branch)
+		if [ "$ref_type" = "heads" ]; then
+			result=1
+		else
+			result=0
+		fi
+		;;
+	*)
+		return 1;;
+	esac
+
+	echo "$result"
+}

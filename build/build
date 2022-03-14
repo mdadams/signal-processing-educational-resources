@@ -40,6 +40,7 @@ usage()
 	========
 
 	$0 -d /tmp/install -z refs/tags/v0.0.1
+	$0 -d /tmp/install -z refs/heads/main
 	EOF
 	exit 2
 }
@@ -85,17 +86,15 @@ fi
 # Build the document.
 ################################################################################
 
-version="$(github_ref_to_version "$github_ref")" || \
-  panic "cannot determine document version"
-ref_type="$(github_ref_type "$github_ref")" || \
-  panic "cannot determine ref type"
+#version="$(github_ref_to_version "$github_ref")" || \
+#  panic "cannot determine document version"
+#ref_type="$(github_ref_type "$github_ref")" || \
+#  panic "cannot determine ref type"
 
-if [ "$ref_type" = "branch" ]; then
-	timestamp="$(date +%Y-%m-%d-%H%M%S)" || panic "cannot get date"
-	version_string="$timestamp"
-else
-	version_string="$version"
-fi
+doc_version="$(get_build_info doc_version "$github_ref")" || \
+  panic "cannot get document version"
+ghp_name="$(get_build_info ghp_name "$github_ref")" || \
+  panic "cannot get GHP name"
 
 if [ ! -d "$install_dir" ]; then
 	mkdir -p "$install_dir" || \
@@ -105,9 +104,19 @@ fi
 (cd "$source_dir" && make clean) || \
   panic "cannot make clean"
 
+make_options=()
+make_options+=(GHP_NAME="$ghp_name")
+make_options+=(DOC_VERSION="$doc_version")
+make_options+=(DOC_SPELLCHECK_MUST_PASS="$spellcheck")
+
+echo "GHP_NAME=$ghp_name"
+echo "DOC_VERSION=$doc_version"
+if [ "$spellcheck" -ne 0 ]; then
+	echo "spellchecking is enabled"
+fi
+
 (cd "$source_dir" && \
-  make DOC_VERSION="$version_string" DOC_SPELLCHECK_MUST_PASS="$spellcheck" \
-  all) || \
+  make "${make_options[@]}" all) || \
   panic "cannot build document"
 
 make INSTALL_DIR="$install_dir" install || \

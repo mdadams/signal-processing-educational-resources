@@ -15,13 +15,13 @@ The version of the document that you are currently reading is available in the
 following formats:
 
   1. online (HTML) format as a single large HTML document:
-    <____{doc_url}____/____{doc_version}____/html>
+    <____{doc_url}____/____{ghp_name}____/html>
 
   2. EPUB format:
-    <____{doc_url}____/____{doc_version}____/main.epub>
+    <____{doc_url}____/____{ghp_name}____/main.epub>
 
   3. online (HTML) format, split across multiple HTML documents:
-    <____{doc_url}____/____{doc_version}____/html_split>
+    <____{doc_url}____/____{ghp_name}____/html_split>
 
 # Git Repository
 

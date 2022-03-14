@@ -163,26 +163,33 @@ git_dir="$tmp_dir/git"
 github_host="github.com"
 github_user="git"
 
-version="$(github_ref_to_version "$github_ref")" || \
-  panic "cannot determine document version"
-ref_type="$(github_ref_type "$github_ref")" || \
-  panic "cannot determine ref type"
-case "$ref_type" in
-branch)
-	version_dir="$git_dir/branch-$version"
-	is_branch=1
-	;;
-tag)
-	version_dir="$git_dir/$version"
-	is_branch=0
-	;;
-*)
-	panic "invalid reference type";;
-esac
+#version="$(github_ref_to_version "$github_ref")" || \
+#  panic "cannot determine document version"
+#ref_type="$(github_ref_type "$github_ref")" || \
+#  panic "cannot determine ref type"
+#case "$ref_type" in
+#branch)
+#	version_dir="$git_dir/branch-$version"
+#	is_branch=1
+#	;;
+#tag)
+#	version_dir="$git_dir/$version"
+#	is_branch=0
+#	;;
+#*)
+#	panic "invalid reference type";;
+#esac
+version="$(get_build_info version "$github_ref")" || \
+  panic "cannot get version"
+version_dir="$(get_build_info ghp_name "$github_ref")" || \
+  panic "cannot get ghp_name"
+is_branch="$(get_build_info is_branch "$github_ref")" || \
+  panic "cannot get is_branch"
 if [ "$verbose" -ge 1 ]; then
 	echo "version $version"
+	echo "version_dir $version_dir"
+	echo "is_branch $is_branch"
 fi
-
 
 ################################################################################
 # Setup SSH client configuration if needed.
@@ -297,7 +304,7 @@ if [ "$is_branch" -ne 0 ]; then
 	fi
 fi
 if [ -e "$version_dir" ]; then
-	panic "directory already exist for $version"
+	panic "directory $version_dir already exists"
 fi
 mkdir -p "$version_dir" || \
   panic "cannot make directory $version_dir"

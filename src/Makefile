@@ -82,7 +82,8 @@ COMPARE_WORD_LISTS = ../bin/compare_word_lists
 # Establish Pandoc settings.
 ################################################################################
 
-PREPROC_OPTIONS += --variable doc_version="$(DOC_VERSION)"
+PREPROC_OPTIONS += --variable version="$(DOC_VERSION)"
+PREPROC_OPTIONS += --variable ghp_name="$(GHP_NAME)"
 PREPROC_OPTIONS += --variable doc_url="https://mdadams.github.io/signal-processing-educational-resources"
 PREPROC_OPTIONS += --variable git_repo_url="https://github.com/mdadams/signal-processing-educational-resources.git"
 
