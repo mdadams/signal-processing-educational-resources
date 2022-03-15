@@ -295,17 +295,36 @@ Some video-lecture series on signal processing include:
      - [Annotated Examples (PDF)](https://www.ece.uvic.ca/~mdadams/sigsysbook/video_lectures/ece260_2020_05_video_lecture_information_package/lecture_examples.pdf).
      - [YouTube playlist](https://youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX).
 
+1. Brian L. Evans,
+   Real-Time Digital Signal Processing Laboratory Course,
+   University of Texas at Austin, TX, USA.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLaJppqXMef2ZHIKM4vpwHIAWyRmw3TtSf).
+     - [Associated Course](http://users.ece.utexas.edu/~bevans/courses/rtdsp).
+
 1. Dennis Freeman,
    MIT 6.003 Signals and Systems,
    Fall 2011\.
      - [YouTube Playlist](https://youtube.com/playlist?list=PLUl4u3cNGP61kdPAOC7CzFjJZ8f1eMUxs).
      - [Associated Course](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-003-signals-and-systems-fall-2011).
 
+1. Asif Hassan,
+   Digital Signal Processing,
+   EC Academy.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLXOYj6DUOGrpVb7_cCB1pZuGH4BFlp61B).
+
 1. Jeremy Kepner,
    MIT D4M: Signal Processing on Databases,
    Fall 2012\.
      - [YouTube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP62DPmPLrVyYfk3-Try_ftJJ).
      - [Associated Course](http://ocw.mit.edu/RESLL-005F12).
+
+1. Miki Lustig,
+   Department of Electrical Engineering and Computer Science,
+   University of California Berkeley, CA, USA
+   EE123 Digital Signal Processing,
+   Spring 2016\.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLSFazQ8nHIuMbuMpAxZQLkwV7TyXv5x7U)
+     - [Associated Course](https://inst.eecs.berkeley.edu/~ee123/sp16).
 
 1. Iman Moazzen,
    Signal Processing Hacks with Iman Moazzen ---
@@ -324,6 +343,15 @@ Some video-lecture series on signal processing include:
    1987\.
       - [YouTube playlist](https://youtube.com/playlist?list=PL41692B571DD0AF9B).
       - [Associated Course](http://ocw.mit.edu/RES-6.007S11).
+
+1. Neso Academy,
+   Signals and Systems.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLBlnK6fEyqRhG6s3jYIU48CqsT5cyiDTO).
+
+1. Adam Panagos,
+   CT1: Signals and System Basics.
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLdciPPorsHumV-3apuNeVGMILtXpwrHxP).
+     - [Related Web Site](https://www.adampanagos.org/ct-signals-and-systems).
 
 1. Rich Radke,
    Digital Signal Processing (ECSE-4530) Lectures,
@@ -345,6 +373,11 @@ Some video-lecture series on signal processing include:
    Spring 2018\.
      - [YouTube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k).
      - [Associated Course](https://ocw.mit.edu/18-065S18).
+
+1. Gowthami Swarna,
+   Signals and Systems,
+   Tutorials Point (India) Ltd. 
+     - [YouTube Playlist](https://youtube.com/playlist?list=PLWPirh4EWFpHr_1ZCkuF9ToYUrmujv9Aa).
 
 1. Barry Van Veen,
    Signal Processing Channel on YouTube.
@@ -489,3 +522,4 @@ Some online courses on various topics related to signal processing include:
       - [Lecture Slides](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/lecture-slides).
       - [Assignments](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/assignments).
       - [Exams](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-011-signals-systems-and-inference-spring-2018/exams).
+
