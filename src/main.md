@@ -138,6 +138,12 @@ Some open-access textbooks on signal processing include the following
      - [Book (PDF)](https://cnx.org/exports/778e36af-4c21-4ef7-9c02-dae860eb7d14@9.72.pdf/fundamentals-of-electrical-engineering-i-9.72.pdf).
      - [Book (Online HTML)](https://open.umn.edu/opentextbooks/formats/402).
 
+1. Douglas L. Jones,
+   Digital Signal Processing: A User's Guide,
+   2010\. 
+     - [Web Site](https://cnx.org/contents/qAa9OhlP@2.44:BMrN-OGO).
+     - [Book (PDF)](https://cnx.org/exports/a806bd3a-194f-4ed2-9609-9436b4ced26e@2.44.pdf/digital-signal-processing-a-users-guide-2.44.pdf).
+
 1. Jelena Kovačević, Vivek K. Goyal, and Martin Vetterli,
    Fourier and Wavelet Signal Processing,
    Jan. 2013,
