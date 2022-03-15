@@ -325,9 +325,9 @@ Some video-lecture series on signal processing include:
      - [Associated Course](http://ocw.mit.edu/RESLL-005F12).
 
 1. Miki Lustig,
-   Department of Electrical Engineering and Computer Science,
-   University of California Berkeley, CA, USA
    EE123 Digital Signal Processing,
+   Department of Electrical Engineering and Computer Science,
+   University of California Berkeley, CA, USA,
    Spring 2016\.
      - [YouTube Playlist](https://youtube.com/playlist?list=PLSFazQ8nHIuMbuMpAxZQLkwV7TyXv5x7U)
      - [Associated Course](https://inst.eecs.berkeley.edu/~ee123/sp16).
